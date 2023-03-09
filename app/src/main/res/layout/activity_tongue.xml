@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_top_v"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_30"
+        android:layout_alignParentTop="true"
+        android:background="@color/title_bg">
+
+        <TextView
+            android:id="@+id/exit_tstv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/btn_selector_transparent_to_orange"
+            android:gravity="center"
+            android:padding="@dimen/dp_3"
+            android:text=" 退出[90s] "
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="@dimen/dp_3"
+            android:text="@string/measure_tongue_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/main_center_v"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title_top_v"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/posture_v"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="@dimen/dp_12"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/camera_preview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ing_end_content_v"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="@dimen/dp_16"
+            android:layout_weight="2.0"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="@dimen/dp_220"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/tongue_top_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bg_tongue_top" />
+
+                <Button
+                    android:id="@+id/tongue_top_btn"
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="@dimen/dp_23"
+                    android:layout_marginBottom="@dimen/dp_12"
+                    android:background="@drawable/bg_tongue_btn"
+                    android:text="点击拍照"
+                    android:textColor="@color/title_bg"
+                    android:textSize="@dimen/sp_10"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="@dimen/dp_220"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/tongue_bottom_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bg_tongue_bottom" />
+
+                <Button
+                    android:id="@+id/tongue_bottom_btn"
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="@dimen/dp_23"
+                    android:layout_marginBottom="@dimen/dp_12"
+                    android:background="@drawable/bg_tongue_btn"
+                    android:text="点击拍照"
+                    android:textColor="@color/title_bg"
+                    android:textSize="@dimen/sp_10"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <Button
+                android:id="@+id/bt_next"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_23"
+                android:background="@drawable/bg_blue_r10"
+                android:text="下一项"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_10"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

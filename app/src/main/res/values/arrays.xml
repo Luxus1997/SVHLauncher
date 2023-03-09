@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="eye_measure_distances">
+        <item>5米</item>
+        <item>2.5米</item>
+        <item>1.5米</item>
+    </string-array>
+    <string-array name="list_show_result_modle">
+        <item>只显示二维码</item>
+        <item>只显示结果</item>
+        <item>显示结果和二维码</item>
+        <item>全不显示(仅身高体重)</item>
+    </string-array>
+    <string-array name="list_cloud_result_type">
+        <item>上禾云接口协议</item>
+        <item>泰安公卫云协议</item>
+    </string-array>
+    <integer-array name="arry_reult_stay_long">
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+    </integer-array>
+    <integer-array name="arry_ads_cycle_lone">
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+        <item>180</item>
+    </integer-array>
+    <integer-array name="arry_coin">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </integer-array>
+    <integer-array name="arry_bmi_xnum">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+    <integer-array name="arry_speech_custom_tips">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+    </integer-array>
+    <string-array name="search_type_items">
+        <item>全部</item>
+        <item>姓名</item>
+        <item>编号</item>
+    </string-array>
+    <string-array name="cloud_data_operate">
+        <item>上传缓存数据</item>
+        <item>清空缓存数据</item>
+        <item>清空全部数据</item>
+    </string-array>
+    <string-array name="unitarr">
+        <item>公制[体重(kg)、身高(cm)]</item>
+        <item>英制[体重(磅)、身高(英尺英寸)]</item>
+        <item>公制[体重(kg)、身高(m)]</item>
+    </string-array>
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_78"
+        android:layout_marginRight="@dimen/dp_30"
+        android:background="@drawable/bg_lblue_r10"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_6"
+        app:layout_constraintBottom_toBottomOf="@+id/stature_photo"
+        app:layout_constraintEnd_toStartOf="@+id/stature_photo"
+        app:layout_constraintTop_toTopOf="@+id/stature_photo">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="建议指导："
+            android:textColor="#1CA6EB"
+            android:textSize="@dimen/sp_9" />
+
+        <TextView
+            android:id="@+id/ideal_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_6"
+            android:layout_marginBottom="@dimen/dp_6"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="理想体重：63.5kg"
+            android:textColor="#1CA6EB"
+            android:textSize="@dimen/sp_9" />
+
+        <TextView
+            android:id="@+id/weight_regulation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="体重调节：-3.5kg"
+            android:textColor="#1CA6EB"
+            android:textSize="@dimen/sp_9" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/stature_photo"
+        android:layout_width="@dimen/dp_51"
+        android:layout_height="@dimen/dp_141"
+        android:src="@drawable/stature_photo_normal"
+        android:layout_marginBottom="@dimen/dp_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/stature_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_9"
+        android:text="【正常】"
+        android:textColor="#1CA6EB"
+        android:textSize="@dimen/sp_9"
+        app:layout_constraintEnd_toEndOf="@+id/stature_photo"
+        app:layout_constraintStart_toStartOf="@+id/stature_photo"
+        app:layout_constraintTop_toBottomOf="@+id/stature_photo" />
+
+    <Button
+        android:id="@+id/bt_next"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_23"
+        android:background="@drawable/bg_blue_r10"
+        android:text="下一项"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:background="@drawable/bg_pink_r10"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_6"
+        app:layout_constraintBottom_toBottomOf="@+id/stature_photo"
+        app:layout_constraintStart_toEndOf="@+id/stature_photo"
+        app:layout_constraintTop_toTopOf="@+id/stature_photo">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="健康知识："
+            android:textColor="#E65A5A"
+            android:textSize="@dimen/sp_9" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_6"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:text="BMI即身体质量指数，是目前国际上常用的衡量人体胖瘦程度以及是否健康的一个标准"
+            android:textColor="#E65A5A"
+            android:textSize="@dimen/sp_9" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="eye_measure_distances">
+        <item>5m</item>
+        <item>2.5m</item>
+        <item>1.5m</item>
+    </string-array>
+    <string-array name="list_show_result_modle">
+        <item>Displays only QR code</item>
+        <item>Displays only the results</item>
+        <item>Display results and QR code</item>
+        <item>Does not show at all (height and weight only)</item>
+    </string-array>
+    <string-array name="list_cloud_result_type">
+        <item>Cloud Interface Protocol</item>
+        <item>Taian Gongwei Cloud Protocol</item>
+    </string-array>
+    <integer-array name="arry_reult_stay_long">
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+    </integer-array>
+    <integer-array name="arry_ads_cycle_lone">
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+        <item>180</item>
+    </integer-array>
+    <integer-array name="arry_coin">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </integer-array>
+    <integer-array name="arry_bmi_xnum">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+    <integer-array name="arry_speech_custom_tips">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+    </integer-array>
+    <string-array name="search_type_items">
+        <item>All</item>
+        <item>Name</item>
+        <item>Number</item>
+    </string-array>
+    <string-array name="cloud_data_operate">
+        <item>Upload cache data</item>
+        <item>Empty cache data</item>
+        <item>Empty all data</item>
+    </string-array>
+    <string-array name="unitarr">
+        <item>Metric system [weight (kg), height (cm)]</item>
+        <item>English [weight (lb), height (feet inches)]</item>
+        <item>Metric system [weight (kg), height (m)]</item>
+    </string-array>
+</resources>

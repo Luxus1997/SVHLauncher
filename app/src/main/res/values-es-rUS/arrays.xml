@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="eye_measure_distances">
+        <item>5 metros</item>
+        <item>2,5 metros</item>
+        <item>1,5 metros</item>
+    </string-array>
+    <string-array name="list_show_result_modle">
+        <item>Mostrar solo el código QR</item>
+        <item>Mostrar solo resultados</item>
+        <item>Mostrar resultados y código QR</item>
+        <item>Sin visualización (solo altura y peso)</item>
+    </string-array>
+    <string-array name="list_cloud_result_type">
+        <item>Protocolo de interfaz en la nube Shanghe</item>
+        <item>Protocolo en la nube de salud pública de Taian</item>
+    </string-array>
+    <integer-array name="arry_reult_stay_long">
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+    </integer-array>
+    <integer-array name="arry_ads_cycle_lone">
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+        <item>180</item>
+    </integer-array>
+    <integer-array name="arry_coin">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </integer-array>
+    <integer-array name="arry_bmi_xnum">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+    <integer-array name="arry_speech_custom_tips">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+    </integer-array>
+    <string-array name="search_type_items">
+        <item>Todo</item>
+        <item>Nombre</item>
+        <item>Número</item>
+    </string-array>
+    <string-array name="cloud_data_operate">
+        <item>Cargar datos almacenados en caché</item>
+        <item>Borrar datos de caché</item>
+        <item>Borrar todos los datos</item>
+    </string-array>
+    <string-array name="unitarr">
+        <item>Sistema métrico [peso (kg), altura (cm)]</item>
+        <item>Inglés [peso (lb), altura (pies pulgadas)]</item>
+        <item>Sistema métrico [peso (kg), altura (m)]</item>
+    </string-array>
+</resources>

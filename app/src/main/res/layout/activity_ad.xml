@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customAttr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/banner_v"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/ad_imgv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/default_logo"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+    <VideoView
+        android:id="@+id/ad_videov"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/dp_0"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/main_top_v"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:layout_marginTop="@dimen/dp_1"
+        android:layout_marginRight="@dimen/dp_6">
+
+        <ImageView
+            android:id="@+id/iv_wifi_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5" />
+
+        <TextView
+            android:id="@+id/t_tstv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/dp_3"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_12" />
+
+        <android.widget.TextClock
+            android:id="@+id/date_tstv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/t_tstv"
+            android:format12Hour="yyyy/MM/dd HH:mm    EEEE"
+            android:format24Hour="yyyy/MM/dd HH:mm    EEEE"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/pm_tstv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t_tstv"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_3"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_10" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/transparent_33"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_5">
+
+        <anylife.scrolltextview.ScrollTextView
+            android:id="@+id/ad_tstv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            customAttr:clickEnable="false"
+            customAttr:isHorizontal="true"
+            customAttr:speed="1"
+            customAttr:text="@string/ad_text_default"
+            customAttr:text_color="@android:color/white"
+            customAttr:text_size="@dimen/sp_14"
+            customAttr:times="500" />
+
+    </LinearLayout>
+</RelativeLayout>

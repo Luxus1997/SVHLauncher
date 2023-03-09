@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_top_v"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_30"
+        android:layout_alignParentTop="true"
+        android:background="@color/title_bg">
+
+        <TextView
+            android:id="@+id/exit_tstv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/btn_selector_transparent_to_orange"
+            android:gravity="center"
+            android:padding="@dimen/dp_3"
+            android:text=" 退出[90s] "
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="@dimen/dp_3"
+            android:text="@string/measure_tw_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/info_tstv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_selector_transparent_to_orange"
+            android:drawableRight="@drawable/iv_down_r"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp_5"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/main_center_v"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title_top_v"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_16">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/radio_tw7"
+                    android:layout_width="@dimen/dp_150"
+                    android:layout_height="@dimen/dp_50"
+                    android:background="@drawable/selector_radio"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="@string/message_tv_tw7"
+                    android:textColor="@drawable/color_radiobtn"
+                    android:textSize="@dimen/sp_16"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/temp_type"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioButton
+                    android:id="@+id/radio_tw8"
+                    android:layout_width="@dimen/dp_150"
+                    android:layout_height="@dimen/dp_50"
+                    android:background="@drawable/selector_radio"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:text="@string/message_tv_tw8"
+                    android:textColor="@drawable/color_radiobtn"
+                    android:textSize="@dimen/sp_16"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/temp_type"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioButton
+                    android:id="@+id/radio_tw9"
+                    android:layout_width="@dimen/dp_150"
+                    android:layout_height="@dimen/dp_50"
+                    android:background="@drawable/selector_radio"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:text="@string/message_tv_tw9"
+                    android:textColor="@drawable/color_radiobtn"
+                    android:textSize="@dimen/sp_16"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/temp_type"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ImageView
+                    android:id="@+id/temp_type"
+                    android:layout_width="@dimen/dp_180"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/temp_tw7"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioButton
+                    android:id="@+id/radio_tw10"
+                    android:layout_width="@dimen/dp_150"
+                    android:layout_height="@dimen/dp_50"
+                    android:background="@drawable/selector_radio"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:text="@string/message_tv_tw10"
+                    android:textColor="@drawable/color_radiobtn"
+                    android:textSize="@dimen/sp_16"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/temp_type"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioButton
+                    android:id="@+id/radio_tw11"
+                    android:layout_width="@dimen/dp_150"
+                    android:layout_height="@dimen/dp_50"
+                    android:background="@drawable/selector_radio"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:text="@string/message_tv_tw11"
+                    android:textColor="@drawable/color_radiobtn"
+                    android:textSize="@dimen/sp_16"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/temp_type"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioButton
+                    android:id="@+id/radio_tw12"
+                    android:layout_width="@dimen/dp_150"
+                    android:layout_height="@dimen/dp_50"
+                    android:background="@drawable/selector_radio"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:text="@string/message_tv_tw12"
+                    android:textColor="@drawable/color_radiobtn"
+                    android:textSize="@dimen/sp_16"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/temp_type" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <Button
+                android:id="@+id/bt_next"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_23"
+                android:layout_marginTop="@dimen/dp_16"
+                android:background="@drawable/bg_blue_r10"
+                android:text="下一项"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_8" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

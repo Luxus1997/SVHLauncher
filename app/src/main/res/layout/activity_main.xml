@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_top_v"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_30"
+        android:layout_alignParentTop="true"
+        android:background="@color/title_bg">
+
+        <TextView
+            android:id="@+id/exit_tstv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/btn_selector_transparent_to_orange"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="@dimen/dp_3"
+            android:text="@string/exit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/start_tstv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/start_txt"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/main_c_v"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title_top_v"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_blood_pressure"
+                android:layout_width="@dimen/dp_134"
+                android:layout_height="@dimen/dp_134"
+                android:layout_marginTop="@dimen/dp_52"
+                android:background="@drawable/bg_blood_pressure"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/ll_stature"
+                android:layout_width="@dimen/dp_134"
+                android:layout_height="@dimen/dp_134"
+                android:layout_marginTop="@dimen/dp_52"
+                android:layout_marginRight="@dimen/dp_52"
+                android:background="@drawable/bg_stature"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toStartOf="@+id/ll_blood_pressure"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/ll_temperature"
+                android:layout_width="@dimen/dp_134"
+                android:layout_height="@dimen/dp_134"
+                android:layout_marginLeft="@dimen/dp_52"
+                android:layout_marginTop="@dimen/dp_52"
+                android:background="@drawable/bg_temperature"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toEndOf="@+id/ll_blood_pressure"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/ll_all"
+                android:layout_width="@dimen/dp_176"
+                android:layout_height="@dimen/dp_66"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_all"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll_blood_pressure" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

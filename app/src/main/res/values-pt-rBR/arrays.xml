@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list_show_result_modle">
+        <item>Mostrar apenas o código QR</item>
+        <item>Mostrar apenas resultados</item>
+        <item>Exibir resultados e código QR</item>
+        <item>Não mostra nada</item>
+    </string-array>
+    <string-array name="list_cloud_result_type">
+        <item>Shanghe Cloud Interface Protocol</item>
+        <item>Acordo de nuvem de saúde pública de TaiAn</item>
+    </string-array>
+    <string-array name="search_type_items">
+        <item>Todos</item>
+        <item>Nome</item>
+        <item>Numeração</item>
+    </string-array>
+    <string-array name="cloud_data_operate">
+        <item>Carregar dados em cache</item>
+        <item>Limpar dados de cache</item>
+        <item>Limpar todos os dados</item>
+    </string-array>
+    <string-array name="unitarr">
+        <item>kg、cm</item>
+        <item>Lb、Pul</item>
+        <item>kg、m</item>
+    </string-array>
+</resources>

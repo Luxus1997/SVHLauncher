@@ -1,0 +1,82 @@
+<resources>
+
+    <string name="app_name" translatable="false">广居中医辨识健康一体机</string>
+    <string name="welcome" translatable="false">欢迎使用智能健康体检设备</string>
+    <string name="ad_text_default" translatable="false">欢迎使用智能健康体检一体机，请站上设备或点击屏幕进入，然后按照智能引导式提示进行全自动测量。</string>
+    <string name="start_txt" translatable="false">您的智能健康管家</string>
+
+    <string name="redo_measure" translatable="false">重新测量</string>
+    <string name="height" translatable="false">身高</string>
+    <string name="weight" translatable="false">体重</string>
+    <string name="bmi" translatable="false">BMI</string>
+    <string name="bp_s" translatable="false">高压</string>
+    <string name="bp_d_name" translatable="false">舒张压(低压)</string>
+    <string name="bp_d" translatable="false">低压</string>
+    <string name="bp_heart" translatable="false">心率</string>
+    <string name="tw" translatable="false">体温</string>
+
+    <string name="measure_register" translatable="false">输入体检号</string>
+    <string name="measure_message" translatable="false">用户信息</string>
+    <string name="measure_bmi_name" translatable="false">身高体重</string>
+    <string name="measure_bp_name" translatable="false">血压心率</string>
+    <string name="measure_tw_name" translatable="false">体温测量</string>
+    <string name="measure_tongue_name" translatable="false">舌苔</string>
+
+    <string name="measuring" translatable="false">正在测量中，请稍等</string>
+
+    <string name="measure_bmi_ts1" translatable="false">"请站到测量识别区, \n然后站稳、站直、平视。"</string>
+
+    <string name="measure_bp_ts1" translatable="false">"请将手臂插入到臂筒，\n然后按血压计上按钮开始测量。\n如遇紧急情况，\n再次按下按钮，立即结束。"</string>
+    <string name="measure_fp_ts2" translatable="false">"正在测量…\n请继续保持姿势，手臂伸直，不要晃动。"</string>
+
+    <string name="measure_tw_ts" translatable="false">"请将体温计对准额头，\n距离3~5cm，按下测量开关"</string>
+
+    <string name="measure_fail" translatable="false">测量失败</string>
+    <string name="measure_result" translatable="false">测量结果</string>
+
+    <string name="exit" translatable="false"> 退出[90s] </string>
+    <string name="register_pe" translatable="false">PHYSICAL\nEXAMINATION</string>
+    <string name="register_code" translatable="false">CODE</string>
+    <string name="register_tzcode" translatable="false">体检号</string>
+    <string name="register_etcode" translatable="false">请输入体检号</string>
+    <string name="register_nocode" translatable="false">无号体检>></string>
+    <string name="register_start" translatable="false">开始体检</string>
+    <string name="register_pls_code" translatable="false">请输入体检号</string>
+
+    <string name="message_title" translatable="false">USER INFORMATION</string>
+    <string name="message_tv_tz" translatable="false">体检号：-</string>
+    <string name="message_name" translatable="false">姓名</string>
+    <string name="message_sex" translatable="false">性别</string>
+    <string name="message_age" translatable="false">年龄</string>
+    <string name="message_illness" translatable="false">检查项</string>
+
+    <string name="message_bmi" translatable="false">体质指数（正常BMI范围:18.5~24.9）</string>
+    <string name="message_tv_height" translatable="false">身高：- cm</string>
+    <string name="message_tv_width" translatable="false">体重：- kg</string>
+    <string name="message_tv_bmi" translatable="false">体质指数（BMI）：-</string>
+
+    <string name="message_pressure" translatable="false">血压心率（正常范围：高压 90.0 ~ 140.0mmHg；低压 60.0 ~ 90.0mmHg）</string>
+    <string name="message_tv_high" translatable="false">高压：- mmHg</string>
+    <string name="message_tv_low" translatable="false">低压：- mmHg</string>
+    <string name="message_tv_heart" translatable="false">心率：- 次/分钟</string>
+
+    <string name="message_tw" translatable="false">体温</string>
+    <string name="message_tv_tw" translatable="false">- ℃</string>
+
+    <string name="message_tv_tw7" translatable="false">额温：- ℃</string>
+    <string name="message_tv_tw8" translatable="false">手心：- ℃</string>
+    <string name="message_tv_tw9" translatable="false">手背：- ℃</string>
+    <string name="message_tv_tw10" translatable="false">胸口：- ℃</string>
+    <string name="message_tv_tw11" translatable="false">胃脘：- ℃</string>
+    <string name="message_tv_tw12" translatable="false">腹部：- ℃</string>
+
+    <string name="upload_report" translatable="false">上传报告</string>
+    <string name="start_measure" translatable="false">开始测量>></string>
+    <string name="again_measure" translatable="false">再次测量>></string>
+    <string name="reload_msg" translatable="false">查看报告</string>
+    <string name="not_all" translatable="false">未完成全部体检</string>
+
+    <string name="network_request_failed" translatable="false">网络请求失败</string>
+    <string name="error_exit" translatable="false">很抱歉，程序出现异常，即将退出....</string>
+
+</resources>
